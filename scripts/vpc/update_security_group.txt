@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: cluster
+  region: us-west-2
+
+vpc:
+  controlPlaneSecurityGroupIDs: [sg-1234, sg-5678]
+
+### command
+eksctl utils update-cluster-vpc-config -f config.yaml

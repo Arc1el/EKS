@@ -1,0 +1,32 @@
+# instance-selector-cluster.yaml
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: cluster
+  region: us-west-2
+
+
+# nodeGroups:
+# - name: ng
+#   instanceSelector:
+#     vCPUs: 2
+#     memory: "4" # 4 GiB, unit defaults to GiB
+
+managedNodeGroups:
+- name: mng
+  instanceSelector:
+    vCPUs: 2
+    memory: 2GiB #
+    cpuArchitecture: x86_64 # default value
+
+
+### command
+eksctl create cluster -f instance-selector-cluster.yaml
+
+### links
+https://eksctl.io/usage/instance-selector/
+
+### dry-run
+$ eksctl create cluster --name development --instance-selector-vcpus=2 --instance-selector-memory=4 --dry-run

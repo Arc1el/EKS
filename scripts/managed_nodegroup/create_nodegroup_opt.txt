@@ -1,0 +1,27 @@
+# cluster.yaml
+# A cluster with an unmanaged nodegroup and two managed nodegroups.
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: hmkim-cluster
+  region: ap-northeast-2
+
+managedNodeGroups:
+  - name: hmkim-ng2
+    # ami: ami-02d5b6fde5f4f21db
+    securityGroups:
+      attachIDs: ["sg-0383602a8f9471264"]
+    # maxPodsPerNode: 80
+    ssh:
+      allow: true
+    # volumeSize: 100
+    # volumeName: /dev/xvda
+    # volumeEncrypted: true
+    # defaults to true, which enforces the use of IMDSv2 tokens
+    disableIMDSv1: false
+    desiredCapacity: 1
+    
+
+

@@ -1,0 +1,7 @@
+    taints:
+      - key: your.domain.com/db
+        value: "true"
+        effect: NoSchedule
+      - key: your.domain.com/production
+        value: "true"
+        effect: NoExecute

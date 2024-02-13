@@ -1,0 +1,8 @@
+vpc:
+  sharedNodeSecurityGroup: sg-0123456789
+
+
+### passive
+vpc:
+  sharedNodeSecurityGroup: sg-0123456789
+  manageSharedNodeSecurityGroupRules: false

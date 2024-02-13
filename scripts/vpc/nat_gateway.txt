@@ -1,0 +1,3 @@
+vpc:
+  nat:
+    gateway: HighlyAvailable # other options: Disable, Single (default)

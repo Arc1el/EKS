@@ -1,0 +1,7 @@
+cluster_role
+AmazonEKSClusterPolicy
+
+node_role
+AmazonEC2ContainerRegistryReadOnly
+AmazonEKS_CNI_Policy
+AmazonEKSWorkerNodePolicy

@@ -1,0 +1,3 @@
+eksctl scale nodegroup --cluster=<clusterName> --nodes=<desiredCount> --name=<nodegroupName> [ --nodes-min=<minSize> ] [ --nodes-max=<maxSize> ] --wait
+
+eksctl scale nodegroup --cluster=hmkim-cluster --nodes=1 --name=ng-4412f734 --nodes-min=1 --nodes-max=2 --wait

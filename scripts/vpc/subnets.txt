@@ -1,0 +1,15 @@
+vpc:
+  id: "vpc-11111"
+  subnets:
+    public:
+      public-one:                           # arbitrary key
+          id: "subnet-0153e560b3129a696"
+      public-two:
+          id: "subnet-0cc9c5aebe75083fd"
+      us-west-2b:                           # or list by AZ
+          id: "subnet-018fa0176ba320e45"
+    private:
+      private-one:
+          id: "subnet-0153e560b3129a696"
+      private-two:
+          id: "subnet-0cc9c5aebe75083fd"

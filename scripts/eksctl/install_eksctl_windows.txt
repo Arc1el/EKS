@@ -1,0 +1,4 @@
+chocolatey install -y eksctl
+
+### upgrade
+chocolatey upgrade -y eksctl
