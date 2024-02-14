@@ -1,0 +1,27 @@
+private_subnet_arns = [
+  "arn:aws:ec2:ap-northeast-2:759320821027:subnet/subnet-0217041fbabac33af",
+  "arn:aws:ec2:ap-northeast-2:759320821027:subnet/subnet-04804ed908ab16838",
+]
+private_subnets = [
+  "subnet-0217041fbabac33af",
+  "subnet-04804ed908ab16838",
+]
+private_subnets_cidr_blocks = tolist([
+  "10.0.1.0/24",
+  "10.0.2.0/24",
+])
+public_subnet_arns = [
+  "arn:aws:ec2:ap-northeast-2:759320821027:subnet/subnet-0d4c2793061e9dbc3",
+  "arn:aws:ec2:ap-northeast-2:759320821027:subnet/subnet-09d84b7ddf5d5be28",
+]
+public_subnets = [
+  "subnet-0d4c2793061e9dbc3",
+  "subnet-09d84b7ddf5d5be28",
+]
+public_subnets_cidr_blocks = tolist([
+  "10.0.101.0/24",
+  "10.0.102.0/24",
+])
+vpc_arn = "arn:aws:ec2:ap-northeast-2:759320821027:vpc/vpc-0a184b058c7e567a3"
+vpc_cidr_block = "10.0.0.0/16"
+vpc_id = "vpc-0a184b058c7e567a3"
